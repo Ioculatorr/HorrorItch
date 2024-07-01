@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: FMOD/Horroritch_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638553914188305018
+  lastModified: 638554508839878629
   FileSizes:
   - Name: Desktop
     Value: 764
@@ -42,7 +42,7 @@ MonoBehaviour:
   - {fileID: 5572081214276829769}
   StringsBanks:
   - {fileID: -6295999750795882291}
-  cacheTime: 638553914188305018
+  cacheTime: 638554508839878629
   cacheVersion: 131618
 --- !u!114 &5572081214276829769
 MonoBehaviour:
@@ -59,7 +59,7 @@ MonoBehaviour:
   Path: FMOD/Horroritch_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638553914188295043
+  lastModified: 638554508839868568
   FileSizes:
   - Name: Desktop
     Value: 3373856
