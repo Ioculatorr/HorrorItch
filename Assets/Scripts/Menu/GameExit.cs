@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using DG.Tweening;
 
 public class GameExit : MonoBehaviour, IInteractable
 {
     [SerializeField] private CanvasGroup exitMenu;
+    [SerializeField] private Image blackoutImg;
 
     public void OnInteract()
     {
@@ -16,8 +19,12 @@ public class GameExit : MonoBehaviour, IInteractable
 
     public void Sleep()
     {
-        Debug.Log("Good night");
-        Application.Quit();
+
+        blackoutImg.DOFade(1f, 2f).OnComplete(() =>
+        {
+            Debug.Log("Good night");
+            Application.Quit();
+        });
     }
 
     public void Live()
