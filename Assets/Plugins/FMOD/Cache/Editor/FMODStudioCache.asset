@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: FMOD/Horroritch_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638554508839878629
+  lastModified: 638555651600790740
   FileSizes:
   - Name: Desktop
-    Value: 764
+    Value: 824
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -37,13 +37,41 @@ MonoBehaviour:
   - {fileID: 5572081214276829769}
   EditorEvents:
   - {fileID: 5688096461576355040}
+  - {fileID: 1823788949096896825}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5572081214276829769}
   StringsBanks:
   - {fileID: -6295999750795882291}
-  cacheTime: 638554508839878629
+  cacheTime: 638555651600790740
   cacheVersion: 131618
+--- !u!114 &1823788949096896825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interaction_Sound
+  m_EditorClassIdentifier: 
+  Path: event:/Interaction_Sound
+  Guid:
+    Data1: 2063491892
+    Data2: 1258781486
+    Data3: 600540306
+    Data4: 515848372
+  Banks:
+  - {fileID: 5572081214276829769}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 341
 --- !u!114 &5572081214276829769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,10 +87,10 @@ MonoBehaviour:
   Path: FMOD/Horroritch_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638554508839868568
+  lastModified: 638555651600770772
   FileSizes:
   - Name: Desktop
-    Value: 3373856
+    Value: 3379872
   Exists: 1
 --- !u!114 &5688096461576355040
 MonoBehaviour:
@@ -86,7 +114,7 @@ MonoBehaviour:
   - {fileID: 5572081214276829769}
   IsStream: 1
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
