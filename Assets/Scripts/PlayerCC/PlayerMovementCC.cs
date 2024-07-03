@@ -50,7 +50,16 @@ public class PlayerMovementCC : MonoBehaviour
     {
         StartCoroutine(FootstepsSound());
     }
-    
+
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+    }
+
+    private void OnEnable()
+    {
+        StartCoroutine(FootstepsSound());
+    }
 
     IEnumerator FootstepsSound()
     {
