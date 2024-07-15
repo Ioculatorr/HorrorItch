@@ -34,8 +34,6 @@ public class GameExit : MonoBehaviour, IInteractable
         {
             Debug.Log("Good night");
             Application.Quit();
-
-            EditorApplication.isPlaying = false;
         });
     }
 

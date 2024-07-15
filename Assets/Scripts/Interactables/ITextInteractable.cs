@@ -27,8 +27,9 @@ public class ITextInteractable : MonoBehaviour, IInteractable
         }
 
         groupCanvas.DOFade(1f, 1f);
-        rectTransform.DOMoveX(1920, 2f)
-             .SetEase(Ease.Linear);
+        //rectTransform.DOMoveX(1920, 2f)
+        //     .SetEase(Ease.Linear);
+
 
         StartCoroutine(HideText());
     }
@@ -38,8 +39,8 @@ public class ITextInteractable : MonoBehaviour, IInteractable
         yield return new WaitForSeconds(5f);
 
         groupCanvas.DOFade(0f, 1f);
-        rectTransform.DOMoveX(-1920, 2f)
-            .SetEase(Ease.Linear);
+        //rectTransform.DOMoveX(-1920, 2f)
+        //    .SetEase(Ease.Linear);
     }
 
 
