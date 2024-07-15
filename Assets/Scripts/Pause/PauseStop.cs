@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PauseStop : MonoBehaviour
 {
     [SerializeField] private CanvasGroup pauseCanvas;
+    [SerializeField] private CinemachineVirtualCamera cameravc;
 
     private bool isPaused = false;
 
@@ -22,7 +23,9 @@ public class PauseStop : MonoBehaviour
                     pauseCanvas.blocksRaycasts = false;
 
                     Cursor.visible = false;
-                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.lockState = CursorLockMode.Locked;
+
+                    cameravc.enabled = true;
 
                     isPaused = false;
 
@@ -38,6 +41,8 @@ public class PauseStop : MonoBehaviour
                     Cursor.lockState = CursorLockMode.Confined;
 
                     isPaused = true;
+
+                    cameravc.enabled = false;
 
                     break;
             }

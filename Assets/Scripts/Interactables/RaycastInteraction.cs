@@ -23,7 +23,7 @@ public class RaycastInteraction : MonoBehaviour
 
     void Interact()
     {
-        Ray ray = playerCamera.ScreenPointToRay(Input.mousePosition);
+        Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
         RaycastHit hit;
 
         FMODUnity.RuntimeManager.PlayOneShot(fmodEvent, transform.position);

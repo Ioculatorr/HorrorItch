@@ -15596,6 +15596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseCanvas: {fileID: 350801984}
+  cameravc: {fileID: 1229750836}
 --- !u!4 &944256370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6715542008301328141, guid: 55189c9052d75eb48a42694c777a3cd4,
@@ -23530,6 +23531,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227999265}
   m_CullTransparentMesh: 1
+--- !u!114 &1229750836 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7475830482969466801, guid: 56fea3a63e4873544bde3796c7a21f64,
+    type: 3}
+  m_PrefabInstance: {fileID: 29591374}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1231577549
 GameObject:
   m_ObjectHideFlags: 0
@@ -37869,7 +37882,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: e16ab363727352c43ab2fbaec88c07fe, type: 2}
+  sharedProfile: {fileID: 11400000, guid: a6560a915ef98420e9faacc1c7438823, type: 2}
 --- !u!4 &2027990164
 Transform:
   m_ObjectHideFlags: 0
@@ -38702,8 +38715,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2027990164}
-  - {fileID: 350801988}
   - {fileID: 909191715}
+  - {fileID: 350801988}
   - {fileID: 1747057062}
   - {fileID: 1232823825}
   - {fileID: 410087041}
