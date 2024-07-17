@@ -49,14 +49,18 @@ public class PlayerMovementRB : MonoBehaviour
         rb.freezeRotation = true;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
+        MovePlayer();
+
+        //Debug.Log(rb.velocity.magnitude);
+
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
 
         MyInput();
-        
+
         SpeedControl();
-        
+
         // handle drag
         if (grounded)
         {
@@ -70,13 +74,6 @@ public class PlayerMovementRB : MonoBehaviour
         {
             rb.drag = 0f;
         }
-    }
-
-    private void FixedUpdate()
-    {
-        MovePlayer();
-        
-        //Debug.Log(rb.velocity.magnitude);
     }
 
     private void MyInput()

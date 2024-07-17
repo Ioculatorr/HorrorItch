@@ -7,6 +7,7 @@ public class PauseStop : MonoBehaviour
 {
     [SerializeField] private CanvasGroup pauseCanvas;
     [SerializeField] private CinemachineVirtualCamera cameravc;
+    [SerializeField] private Rigidbody playerRB;
 
     private bool isPaused = false;
 
@@ -29,6 +30,8 @@ public class PauseStop : MonoBehaviour
 
                     isPaused = false;
 
+                    playerRB.isKinematic = false;
+
                     break;
 
                 case false:
@@ -41,6 +44,8 @@ public class PauseStop : MonoBehaviour
                     Cursor.lockState = CursorLockMode.Confined;
 
                     isPaused = true;
+
+                    playerRB.isKinematic = true;
 
                     cameravc.enabled = false;
 

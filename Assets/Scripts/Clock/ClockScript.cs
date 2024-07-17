@@ -9,7 +9,7 @@ public class ClockScript : MonoBehaviour
 
     private void Start()
     {
-        this.transform.DORotate( new Vector3 (0, 0, 360), dayDuration, RotateMode.FastBeyond360)
+        this.transform.DOLocalRotate( new Vector3 (0, 0, 360), dayDuration, RotateMode.FastBeyond360)
             .SetEase(Ease.Linear)     // Ensure the rotation is linear
             .SetLoops(-1, LoopType.Restart);   // Loop indefinitely
     }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d6e65f7b-807a-455e-955a-6dc93d6db0e6}">
+		<property name="assetPath">
+			<value>SeaAmbient.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>82.08197916666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{809ea632-6cff-460f-be04-c303b559df65}</destination>
+		</relationship>
+	</object>
+</objects>

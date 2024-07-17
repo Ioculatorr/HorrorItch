@@ -15,11 +15,38 @@ MonoBehaviour:
   Path: FMOD/Horroritch_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638555651600790740
+  lastModified: 638568117744089032
   FileSizes:
   - Name: Desktop
-    Value: 824
+    Value: 864
   Exists: 1
+--- !u!114 &-2166846563973372802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SeaAmbient
+  m_EditorClassIdentifier: 
+  Path: event:/SeaAmbient
+  Guid:
+    Data1: -1781625719
+    Data2: 1276997878
+    Data3: -233858146
+    Data4: -186545262
+  Banks:
+  - {fileID: 5572081214276829769}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 157081
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38,12 +65,13 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: 5688096461576355040}
   - {fileID: 1823788949096896825}
+  - {fileID: -2166846563973372802}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5572081214276829769}
   StringsBanks:
   - {fileID: -6295999750795882291}
-  cacheTime: 638555651600790740
+  cacheTime: 638568117744089032
   cacheVersion: 131618
 --- !u!114 &1823788949096896825
 MonoBehaviour:
@@ -87,10 +115,10 @@ MonoBehaviour:
   Path: FMOD/Horroritch_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638555651600770772
+  lastModified: 638568117744068987
   FileSizes:
   - Name: Desktop
-    Value: 3379872
+    Value: 4415808
   Exists: 1
 --- !u!114 &5688096461576355040
 MonoBehaviour:
