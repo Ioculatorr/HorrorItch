@@ -7,9 +7,12 @@ public class PauseStop : MonoBehaviour
 {
     [SerializeField] private CanvasGroup pauseCanvas;
     [SerializeField] private CinemachineVirtualCamera cameravc;
-    [SerializeField] private Rigidbody playerRB;
+    [SerializeField] private Rigidbody rb;
 
     private bool isPaused = false;
+
+    private Vector3 savedVelocity;
+    private Vector3 savedAngularVelocity;
 
     private void Update()
     {
@@ -30,7 +33,8 @@ public class PauseStop : MonoBehaviour
 
                     isPaused = false;
 
-                    playerRB.isKinematic = false;
+                    ResumeRigidbody();
+
 
                     break;
 
@@ -45,8 +49,7 @@ public class PauseStop : MonoBehaviour
 
                     isPaused = true;
 
-                    playerRB.isKinematic = true;
-
+                    PauseRigidbody();
                     cameravc.enabled = false;
 
                     break;
@@ -57,5 +60,33 @@ public class PauseStop : MonoBehaviour
     public void MainMenuExit()
     {
         SceneManager.LoadScene(0);
+    }
+
+    private void PauseRigidbody()
+    {
+        if (rb != null)
+        {
+            // Save the current velocity and angular velocity
+            savedVelocity = rb.velocity;
+            savedAngularVelocity = rb.angularVelocity;
+
+            // Stop the Rigidbody
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+
+            rb.isKinematic = true;
+        }
+    }
+
+    private void ResumeRigidbody()
+    {
+        if (rb != null)
+        {
+            rb.isKinematic = false;
+            
+            // Restore the saved velocity and angular velocity
+            rb.velocity = savedVelocity;
+            rb.angularVelocity = savedAngularVelocity;
+        }
     }
 }

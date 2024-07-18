@@ -3,6 +3,8 @@ using TMPro;
 using UnityEngine.UI;
 using DG.Tweening;
 using System.Collections;
+using FMODUnity;
+using System.Diagnostics.Tracing;
 
 public class ITextInteractable : MonoBehaviour, IInteractable
 {
@@ -12,6 +14,9 @@ public class ITextInteractable : MonoBehaviour, IInteractable
     [SerializeField] private RectTransform rectTransform;
 
     [SerializeField] private InteractionSO objectData;
+
+    [SerializeField] private EventReference fmodEventPath;
+
 
     public void OnInteract()
     {
@@ -26,10 +31,11 @@ public class ITextInteractable : MonoBehaviour, IInteractable
             imageCanvas.sprite = objectData.interactionSprite;
         }
 
-        groupCanvas.DOFade(1f, 1f);
+        groupCanvas.DOFade(1f, 0.1f);
         //rectTransform.DOMoveX(1920, 2f)
         //     .SetEase(Ease.Linear);
 
+        RuntimeManager.PlayOneShot(fmodEventPath);
 
         StartCoroutine(HideText());
     }

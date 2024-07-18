@@ -89,7 +89,7 @@ MonoBehaviour:
     m_Bits: 64
   Water:
     serializedVersion: 2
-    m_Bits: 17
+    m_Bits: 16
   grounded: 0
   swimming: 0
   jumpKey: 32
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 118387044032775978}
   m_Layer: 0
   m_Name: PlayerObj
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
